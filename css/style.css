@@ -1,0 +1,517 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prosto+One&display=swap');
+
+/* Базовые настройки */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    font-family: "Prosto One", sans-serif;
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1 0 auto;
+    font-size: 1em;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+footer {
+    flex: 0 0 auto;
+}
+
+.section {
+    min-height: 100vh;
+    font-size: 2em;
+    scroll-snap-align: start;
+}
+/* Конец Базовых настроек */
+
+/* Заставка */
+.section.first {
+    display: flex;
+    background-image: url('../img/previewImage.jpg');
+    background-size: cover;
+    background-position-x: right;
+    background-position-y: center;
+}
+
+.section.first .inside-shadow {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.402);
+    min-height: 100vh;
+}
+
+.section.first .content-inside {
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    color: white;
+}
+
+.section.first .content-inside h1 {
+    font-size: 4em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.section.first .content-inside p {
+    font-size: 1.3em;
+}
+
+.section.first .content-inside span {
+    color: rgb(255, 0, 0);
+    text-align: right;
+    font-size: 1.3em;
+}
+/* Конец Заставка */
+
+/* Программа */
+.section.second {
+    background-image: url('../img/backgroundSecondScreen.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.section.second .inside-shadow {
+    background-color: rgba(0, 0, 0, 0.402);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    min-height: 100vh;
+    gap: 2em;
+    padding: 2em 0;
+}
+
+.section.second .inside-shadow h1 {
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+.section.second .content-inside {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    width: 70%;
+}
+
+.section.second .content-inside .card {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.section.second .content-inside .card .image {
+    background-size: cover;
+    background-position: center center;
+
+    width: 15em;
+    height: 10em;
+    border-radius: 2em;
+
+    filter: drop-shadow(0 0 5px #fff);
+
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.section.second .content-inside .card .image.shashlik {
+    background-image: url('../img/shashlik.webp');
+}
+
+.section.second .content-inside .card .image.banya {
+    background-image: url('../img/banya.jpg');
+}
+
+.section.second .content-inside .card .image.lake {
+    background-image: url('../img/lake.webp');
+}
+
+.section.second .content-inside .card .description {
+    background-color: rgba(0, 0, 0, 0.402);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2em;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.section.second .content-inside .description
+{
+    font-weight: 400;
+    font-size: 0.7em;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.3;
+}
+/* Конец Программа */
+
+/* Компания */
+.section.third {
+    background-image: url('../img/company.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.section.third .inside-shadow {
+    background-color: rgba(0, 0, 0, 0.402);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    min-height: 100vh;
+    gap: 2em;
+    padding: 2em 0;
+}
+
+.section.third .inside-shadow h1 {
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+.section.third .content-inside {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    width: 70%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.section.third .content-inside .item {
+    background-size: cover;
+    background-position: center center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 7em;
+    height: 10em;
+    border-radius: 2em;
+
+    font-family: "Luckiest Guy", cursive;
+    color: rgb(227, 68, 255);
+    font-size: 1.2em;
+    filter: drop-shadow(0 0 5px #fff);
+}
+
+.section.third .content-inside .item .container-item {
+    background-color: rgba(0, 0, 0, 0.402);
+    width: 100%;
+    height: 100%;
+    border-radius: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section.third .content-inside .item.marat {
+    background-image: url('../img/marat.jpg');
+}
+
+.section.third .content-inside .item.tanikova {
+    background-image: url('../img/tanikova.jpg');
+}
+
+.section.third .content-inside .item.anich {
+    background-image: url('../img/anich.jpg');
+}
+
+.section.third .content-inside .item.comarose {
+    background-image: url('../img/comarose.jpg');
+    background-position-x: 70%;
+}
+
+.section.third .content-inside .item.nikita {
+    background-image: url('../img/nikitosik.jpg');
+}
+
+.section.third .content-inside .item.buzik {
+    background-image: url('../img/buzik.jpg');
+}
+
+.section.third .content-inside .item.sergey {
+    background-image: url('../img/sergey.jpg');
+    background-position-y: 10%;
+}
+
+.section.third .content-inside .item.leron {
+    background-image: url('../img/leron.jpg');
+}
+
+.section.third .content-inside .item.lerach {
+    background-image: url('../img/lerach.jpg');
+}
+
+.section.third .content-inside .item.kirilion {
+    background-image: url('../img/kirilion.jpg');
+}
+
+.section.third .content-inside .item.comarose .container-item {
+    align-items: flex-start;
+}
+
+.section.third .content-inside .item.comarose .container-item p {
+    padding-top: 2em;
+    color: #be75ff;
+}
+
+.section.third .content-inside .item.anich .container-item {
+    align-items: flex-start;
+}
+
+.section.third .content-inside .item.anich .container-item p {
+    padding-top: 1.3em;
+    color: #00ff80;
+}
+
+.section.third .content-inside .item.tanikova .container-item {
+    align-items: flex-start;
+}
+
+.section.third .content-inside .item.tanikova .container-item p {
+    padding-top: 1.5em;
+    color: #fff;
+}
+
+.section.third .content-inside .item.nikita .container-item {
+    align-items: flex-end;
+}
+
+.section.third .content-inside .item.nikita .container-item p {
+    padding-bottom: 1.5em;
+    color: #ffe600;
+}
+
+.section.third .content-inside .item.buzik .container-item {
+    align-items: flex-end;
+}
+
+.section.third .content-inside .item.buzik .container-item p {
+    padding-bottom: 1.5em;
+    color: #ff0000;
+}
+
+.section.third .content-inside .item.sergey .container-item {
+    align-items: flex-end;
+}
+
+.section.third .content-inside .item.sergey .container-item p {
+    padding-bottom: 1.5em;
+    color: #ff00d4;
+}
+
+.section.third .content-inside .item.leron .container-item {
+    align-items: flex-end;
+}
+
+.section.third .content-inside .item.leron .container-item p {
+    padding-bottom: 1.5em;
+    color: #0026ff;
+}
+
+.section.third .content-inside .item.lerach .container-item {
+    align-items: flex-end;
+}
+
+.section.third .content-inside .item.lerach .container-item p {
+    padding-bottom: 1.5em;
+    color: #4dff00;
+}
+
+.section.third .content-inside .item.kirilion .container-item {
+    align-items: flex-end;
+}
+
+.section.third .content-inside .item.kirilion .container-item p {
+    padding-bottom: 1.5em;
+    color: #00f2ff;
+}
+/* Конец Компания */
+
+/* Алкоголь */
+.section.fourth {
+    background-image: url('../img/alchogol.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.section.fourth .inside-shadow {
+    background-color: rgba(0, 0, 0, 0.402);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    min-height: 100vh;
+    gap: 2em;
+    padding: 2em 0;
+}
+
+.section.fourth .inside-shadow h1 {
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: 1em;
+}
+
+.section.fourth .content-inside {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    width: 70%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+form {
+    padding: 2em;
+    margin: 3em auto 1em;
+    text-align: left;
+    background-color: #222222;
+    filter: drop-shadow(0 0 0.2em #000000);
+    width: fit-content;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat", sans-serif;
+    gap: 1em;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+form div input {
+    font-size: 1em;
+    line-height: 2;
+    padding: 0 0.5em;
+    font-family: "Montserrat", sans-serif;
+    border: 0.1em solid #5c5c5c;
+    max-width: 17em;
+    border-radius: 0.5em;
+}
+
+form label {
+    line-height: 1;
+    font-size: 1.4em;
+    display: block;
+    font-weight: 400;
+}
+
+form button {
+    font-size: 1.1em;
+    line-height: 2.3;
+    font-family: "Montserrat", sans-serif;
+    width: 15em;
+    margin: 1em auto 0;
+    border-radius: 0.5em;
+    background-color: rgb(23, 174, 23);
+    color: #fff;
+    border: 0px;
+    font-weight: 600;
+}
+
+/* Конец Алкоголя */
+
+/* swipe up */
+.mouse-container {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    bottom: 2em;
+    justify-content: center;
+}
+
+.mouse {
+    width: 7em;
+    height: 10em;
+    border: 2px solid white;
+    border-radius: 60px;
+    box-shadow: 
+        0 15px 35px rgba(0, 0, 0, 0.5),
+        inset 0 -10px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.wheel-container {
+    position: relative;
+    width: 2em;
+    height: 100%;
+    overflow: hidden;
+}
+
+.wheel {
+    position: absolute;
+    /* top: -10px; */
+    width: 2em;
+    height: 3em;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 
+        inset 0 0 5px rgba(0, 0, 0, 0.8),
+        0 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 600px) {
+    .mouse {
+        transform: scale(0.8);
+    }
+    
+}
+/* Конец swipe up */
+
+/* Навигационные точки */
+.nav-dots {
+    position: fixed;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+}
+
+.dot {
+    display: block;
+    width: 14px;
+    height: 14px;
+    margin: 15px 0;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.5);
+    border: 2px solid white;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.dot.active {
+    background: white;
+    transform: scale(1.3);
+}
+
+.dot:hover {
+    transform: scale(1.4);
+}
+/* Конец Навигационные точки */
