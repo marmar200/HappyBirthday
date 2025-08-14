@@ -11,6 +11,7 @@ html, body {
     font-family: "Prosto One", sans-serif;
     scroll-behavior: smooth;
     overflow: hidden;
+    font-size: 1.125vw;
 }
 
 .wrapper {
@@ -43,7 +44,7 @@ footer {
     display: flex;
     background-image: url('../img/previewImage.jpg');
     background-size: cover;
-    background-position-x: right;
+    background-position-x: center;
     background-position-y: center;
 }
 
@@ -102,13 +103,15 @@ footer {
 .section.second .inside-shadow h1 {
     text-transform: uppercase;
     font-size: 1.5em;
+    letter-spacing: 0.5em;
 }
 
 .section.second .content-inside {
     display: flex;
     align-items: center;
     gap: 2em;
-    width: 70%;
+    width: 80%;
+    font-size: 1.2em;
 }
 
 .section.second .content-inside .card {
@@ -121,8 +124,8 @@ footer {
     background-size: cover;
     background-position: center center;
 
-    width: 15em;
-    height: 10em;
+    width: 13em;
+    height: 13em;
     border-radius: 2em;
 
     filter: drop-shadow(0 0 5px #fff);
@@ -130,6 +133,7 @@ footer {
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     font-weight: 600;
+    font-size: 0.7em;
 }
 
 .section.second .content-inside .card .image.shashlik {
@@ -159,9 +163,9 @@ footer {
 .section.second .content-inside .description
 {
     font-weight: 400;
-    font-size: 0.7em;
+    font-size: 0.75em;
     font-family: "Montserrat", sans-serif;
-    line-height: 1.3;
+    line-height: 1.25;
 }
 /* Конец Программа */
 
@@ -187,6 +191,7 @@ footer {
 .section.third .inside-shadow h1 {
     text-transform: uppercase;
     font-size: 1.5em;
+    letter-spacing: 1em;
 }
 
 .section.third .content-inside {
@@ -488,7 +493,7 @@ form button {
 /* Навигационные точки */
 .nav-dots {
     position: fixed;
-    right: 30px;
+    right: 2em;
     top: 50%;
     transform: translateY(-50%);
     z-index: 100;
@@ -496,9 +501,9 @@ form button {
 
 .dot {
     display: block;
-    width: 14px;
-    height: 14px;
-    margin: 15px 0;
+    width: 1.5em;
+    height: 1.5em;
+    margin: 2em 0;
     border-radius: 50%;
     background: rgba(255,255,255,0.5);
     border: 2px solid white;
@@ -515,3 +520,9 @@ form button {
     transform: scale(1.4);
 }
 /* Конец Навигационные точки */
+
+@media (max-width: 1024px) {
+    html, body {
+        font-size: 1.325vw;
+    }
+}
